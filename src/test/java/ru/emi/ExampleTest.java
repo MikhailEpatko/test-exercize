@@ -62,7 +62,7 @@ public class ExampleTest {
     public void countTheWordsTest() {
         String expectedOut = String.format("{b=5, a=4, c=3}%s", System.lineSeparator());
 
-        e.countTheWords("a a a b b c a b b b c c");
+        e.countTheWords("a a a b ,./+*%$^&#@! b c a b b b c c");
 
         assertThat(outContent.toString(), is(expectedOut));
     }

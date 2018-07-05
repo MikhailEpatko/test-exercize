@@ -49,7 +49,8 @@ public class Example {
     убывания частоты вхождения.
      */
     public void countTheWords(String text) {
-        Map<String, Long> map = Arrays.stream(text.split(" "))
+        Map<String, Long> map = Arrays.stream(text.replaceAll("\\p{Punct}", "").split("\\s+"))
+                .map(String::toLowerCase)
                 .collect(Collectors.groupingBy(Function.identity(), counting()))
                 .entrySet().stream()
                 .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
