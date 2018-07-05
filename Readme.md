@@ -11,4 +11,4 @@ Or:
 
 `mvn package`
 
-`java -jar ./target/test-exersize-1.0-SNAPSHOT.jar` 
+`java -jar ./target/test-exercize-1.0-SNAPSHOT.jar` 
