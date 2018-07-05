@@ -1,4 +1,4 @@
-#To start the program:
+# To start the program:
 
 1.1. Open project in IDE
 
